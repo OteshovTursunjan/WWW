@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #0056b3;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 15px;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #003f8a;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+/* Стили для футера */
+footer {
+    position: fixed; /* Фиксируем футер внизу */
+    bottom: 0; /* Располагаем в самом низу окна */
+    left: 0; /* Выравниваем по левому краю */
+    width: 100%; /* На всю ширину окна */
+    background-color: #f0f0f0; /* Фон для выделения */
+    text-align: center; /* Центрируем текст */
+    padding: 10px;
+    border-top: 1px solid #ccc; /* Разделительная линия сверху */
+    font-size: 14px; /* Размер шрифта */
+    color: #555; /* Цвет текста */
+}
+
+/* Стили для "Ваш город" */
+/* Стили для "Ваш город" */
+header:first-of-type {
+    position: absolute; /* Размещаем в верхнем левом углу */
+    top: 10px; /* Отступ сверху */
+    left: 10px; /* Отступ слева */
+    font-size: 12px; /* Уменьшаем шрифт */
+    color: #555; /* Нейтральный цвет текста */
+    font-weight: normal; /* Нормальный стиль текста */
+}
+
+/* Стили для второго header */
+header:nth-of-type(2) {
+    text-align: center; /* Центрируем заголовок */
+    margin-top: 50px; /* Отступ сверху от первого header */
+}
