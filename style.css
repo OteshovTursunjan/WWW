@@ -9,16 +9,18 @@ body {
 nav {
     display: flex;
     justify-content: center;
-    background-color: #0056b3;
-    padding: 10px 0;
+    background-color: #003f8a;
+    padding: 3px 4px;
+    height: 10px; /* Уменьшите до нужного значения */
+    line-height: 50px; 
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 15px;
     margin: 0 15px;
-    padding: 5px 10px;
+    padding: 5px 50px;
     transition: background-color 0.3s;
 }
 
@@ -28,11 +30,11 @@ nav a:hover {
 }
 
 main {
-    padding: 20px;
+    padding: 50px;
 }
 
 section {
-    margin-bottom: 40px;
+    margin-bottom: 150px;
 }
 
 /* Стили для футера */
@@ -64,4 +66,213 @@ header:first-of-type {
 header:nth-of-type(2) {
     text-align: center; /* Центрируем заголовок */
     margin-top: 50px; /* Отступ сверху от первого header */
+}
+/* Стили для верхней панели */
+/* Стили для верхней панели */
+.top-bar {
+    position: absolute; /* Фиксируем в верхней части */
+    top: 10px; /* Отступ сверху */
+    left: 10px; /* Отступ слева */
+    display: flex; /* Располагаем элементы в строку */
+    align-items: center; /* Выравниваем по вертикали */
+    gap: 1400px; /* Расстояние между элементами */
+}
+/* Контейнер для выпадающего списка */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Кнопка для открытия списка */
+.dropdown-btn {
+    position: absolute; /* Фиксируем в верхней части */
+    top: -5px; /* Отступ сверху */
+    left: -500px; /* Отступ слева */
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+/* Скрытый список */
+.dropdown-content {
+    top: 40px; /* Отступ сверху */
+    left: -500px; /* Отступ слева */
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 10px;
+ 
+
+}
+
+/* Элементы списка */
+.dropdown-content p {
+    color: #555;
+    padding: 8px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Эффект при наведении на элементы */
+.dropdown-content p:hover {
+    background-color: #ddd;
+}
+
+/* Показываем список при наведении на контейнер */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Общие стили для навигации */
+
+
+/* Стиль контейнера для специалистов */
+.specialist {
+    position: relative; /* Чтобы позиционировать выпадающий контент */
+    display: inline-block;
+    top: -18px; /* Отступ сверху */
+    left: -200px;
+}
+
+/* Стиль кнопки */
+.specialist-btn {
+    background-color: #007BFF; /* Синий цвет */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block;
+}
+
+/* Изменение цвета кнопки при наведении */
+.specialist-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Скрытый блок контента */
+.specialist-content {
+    display: none; /* Изначально скрыто */
+    position: absolute; /* Позиционирование относительно .specialist */
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 10px;
+}
+
+/* Внутренние элементы выпадающего списка */
+.specialist-content p {
+    color: #555;
+    padding: 8px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Изменение стиля при наведении на пункт меню */
+.specialist-content p:hover {
+    background-color: #ddd;
+}
+
+/* Показываем блок при наведении */
+.specialist:hover .specialist-content {
+    display: block;
+}
+.price{
+    position: relative;
+    display: inline-block;
+    top: -40px;
+    left: 100px;
+}
+.price-btn{
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border:  none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block;
+}
+.price-btn:hove{
+    background-color: #0056b3;
+}
+.price-content{
+    display: none;
+    position: absolute;
+    display: none;
+    position: absolute;
+    background-color:#f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 10px;
+}
+.price-content p:hover{
+    background-color: #ddd;
+
+}
+.price:hover .price-content{
+    display: block;
+}
+.news{
+    position: relative;
+    display: inline-block;
+    top: -55px;
+    left: 220px;
+}
+.news-btn{
+    background-color: #007BFF;
+    color:white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block;
+}
+.news-btn:hover{
+    background-color:#0056b3;
+}
+.news-content{
+    display: none;
+    position: absolute;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-height: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 10px;
+}
+.news-content p{
+    color: #555;
+    padding: 8px;
+    text-decoration: none;
+    display: block;
+}
+.news-content p:hover{
+    background-color: #ddd;
+}
+.news:hover .news-content{
+    display: block;
+}
+
+
+.btn{
+    background-color: #e37d17;
+    padding: 10px 20px;
 }

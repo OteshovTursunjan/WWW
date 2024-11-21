@@ -7,17 +7,65 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h4>Ваш город</h4>
+    <header class="top-bar">
+        <span>Ваш город</span>
+        <button onclick="alert('Вход в кабинет')">Кабинет</button>
     </header>
     <header>
         <h1>Больница "Ваше здоровье"</h1>
     </header>
+    <button class="btn" type="button"  onclick="alert('Привет!')">
+       Записаться
+      </button>
+      
+   
     <nav>
-        <a href="#services">Услуги</a>
-        <a href="#specialists">Специалисты</a>
-        <a href="#prices">Цены</a>
-        <a href="#about">О нас</a>
+        <div class="dropdown">
+            <a href="javascript:void(0);" class="dropdown-btn">Услуги</a>
+            <div class="dropdown-content">
+                <p>Консультации специалистов</p>
+                <p>МРТ</p>
+                <p>Урологические операции</p>
+                <p>Эндоскопия</p>
+                <p>Программы медицинского обслуживания</p>
+            </div>
+        </div>
+    </nav>
+    <nav>
+        <div class = "specialist">
+            <a href = "javascript:void(0);" class="specialist-btn">Специалисты</a>
+            <div class="specialist-content">
+                <p>Гинеколог</p>
+                <p>Дерметолог</p>
+                <p>Эндокринолог</p>
+                <p>Хирург</p>
+                <p>Травмотолог</p>
+            </div>
+        </div>
+    </nav>
+    <nav>
+        <div class = "price" >
+            <a href="javascript:void(0);"class = "specialist-btn">Цены</a>
+            <div class="price-content">
+                <p>Консультации специалистов</p>
+            <p>Чекапы</p>
+            <p>УЗИ</p>
+            <p>МРТ</p>
+            <p>Операции</p>
+            </div>
+        </div>
+    </nav>
+    <nav>
+        <div class = "news">
+            <a href="javascript:void(0);" class="specialist-btn">News</a>
+            <div class="news-content">
+                <p>Наши предложения</p>
+                <p>Новости</p>
+                <p>Статьи</p>
+                <p>Видео</p>
+                <p>О нас пишут</p>
+            </div>
+        </div>
     </nav>
     <footer>
         <p>&copy; 2024 Больница "Ваше здоровье". Все права защищены.</p>
